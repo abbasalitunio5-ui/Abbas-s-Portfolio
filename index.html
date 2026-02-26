@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Abbas ali | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body{
+    background:#f2f6fb;
+    color:#333;
+}
+
+/* ===== HEADER ===== */
+.hero{
+    height:65vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position: relative;
+    overflow: hidden;
+
+    /* CSS IMAGE EFFECT */
+    background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.15), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(0,0,0,0.2), transparent 40%),
+    linear-gradient(135deg, #0d6efd, #003d99);
+}
+
+/* FLOATING SHAPES (Pseudo-elements) */
+.hero::before,
+.hero::after{
+    content:'';
+    position:absolute;
+    border-radius:50%;
+    background: rgba(255,255,255,0.1);
+    width:200px;
+    height:200px;
+    top:-50px;
+    left:-50px;
+    animation: float 6s infinite ease-in-out alternate;
+}
+.hero::after{
+    width:300px;
+    height:300px;
+    top:auto;
+    bottom:-100px;
+    right:-100px;
+    animation-duration: 8s;
+}
+@keyframes float{
+    0% {transform:translate(0,0) rotate(0deg);}
+    50% {transform:translate(50px,30px) rotate(180deg);}
+    100% {transform:translate(0,0) rotate(360deg);}
+}
+
+/* HEADER TEXT */
+.hero h1{
+    font-size:50px;
+    letter-spacing:3px;
+    margin-bottom:15px;
+    text-shadow:2px 2px 15px rgba(0,0,0,0.5);
+}
+
+/* BEGINNER WEB DEVELOPER BADGE */
+.hero .role{
+    font-size:22px;
+    padding:12px 30px;
+    border-radius:40px;
+    border:2px solid rgba(255,255,255,0.8);
+    background: linear-gradient(90deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+    box-shadow:0 0 15px rgba(255,255,255,0.4);
+    font-weight:bold;
+    transition: all 0.3s ease;
+}
+.hero .role:hover{
+    background: rgba(255,255,255,0.4);
+    color:#0047b3;
+    transform: scale(1.1);
+    box-shadow:0 0 25px rgba(255,255,255,0.6);
+}
+
+/* SECTIONS */
+section{
+    background:white;
+    max-width:900px;
+    margin:25px auto;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+h2{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+/* SKILLS */
+.skills span{
+    display:inline-block;
+    margin:6px;
+    padding:8px 14px;
+    background:#e9ecef;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* PROJECTS */
+.project{
+    background:#f8f9fa;
+    padding:15px;
+    margin-top:15px;
+    border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="hero">
+    <div>
+        <h1>Abbas ali</h1>
+        <p class="role">Beginner Web Developer</p>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <p>
+        My name is Abbas ali. I am learning web development from scratch.
+        I want to become a professional web developer and create websites and games.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript (Learning)</span>
+        <span>Web Design</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio using HTML & CSS.</p>
+    </div>
+    <div class="project">
+        <h3>Train Game Idea</h3>
+        <p>Concept of a train running in the sky 🚆☁️</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>Contact</h2>
+    <p>Email: example@gmail.com</p>
+    <p>GitHub: github.com/yourname</p>
+</section>
+
+<footer>
+    <p>© 2026 Abbas ali| All Rights Reserved</p>
+</footer>
+
+body {
+    background-color: lighty
+</html>
